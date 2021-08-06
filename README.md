@@ -1,0 +1,1 @@
+This is the initial portfolio site, so it's quick and simple. 
