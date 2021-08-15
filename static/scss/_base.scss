@@ -1,0 +1,131 @@
+// -------------------------------------------------- Import Fonts //
+
+@import url("https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&family=Montserrat:wght@800&family=Raleway:wght@400;500&display=swap");
+
+// ----------------------------------------------------- Variables //
+
+// - Fonts - //
+$heading-text: "Montserrat", sans-serif;
+$nav-text: "Lekton", sans-serif;
+$standard-text: "Raleway", sans-serif;
+$project-text: "Lekton", sans-serif;
+
+// - Colors - Standard //
+$white: #ffffff;
+$black: #000000;
+$bg-grey: #fafafa;
+$light-grey: #dcdcdc;
+$dark-grey: #424242;
+
+// - Colors - Python //
+$granite-grey: #646464;
+$light-blue: #4b8bbe; // cyan-blue-azure
+$dark-blue: #306998; // lapis-lazuli
+$shandy: #ffe873;
+$sunglow: #ffd43b;
+
+// - Colors - Tech //
+$html-red: #e44d26;
+$css-blue: #264de4;
+$sass-pink: #cd6799;
+$js-yellow: #f7df1e;
+$jquery-blue: #0769ad;
+$d3-orange: #faad1e;
+$bootstrap-purple: #7952b3;
+$django-green: #092e20;
+$postgresql-blue: #336791;
+$mongodb-green: #3fa037;
+
+// - Other - //
+$nav-height: 100px;
+
+// -------------------------------------------------------- Mixins //
+
+// set margin & padding for each section
+// negative margins used to hide revealed background from using
+// slanted div sections
+@mixin section-spacing {
+    padding: 7rem 0 9rem;
+    margin-top: -4rem;
+
+    @media (min-width: 768px) {
+        padding: 10rem 0 18rem;
+        margin-top: -8rem;
+    }
+}
+
+@mixin slanted-div {
+    // set slant for screen widths up to and inc standard HD res
+    $slant-hd: calc(100vw / 18);
+    -webkit-clip-path: polygon(0 $slant-hd, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 $slant-hd, 100% 0, 100% 100%, 0 100%);
+
+    @media (min-width: 1921px) {
+        // adjust slant on screens wider than standard HD res
+        $slant-qhd: calc(100vw / 22);
+        -webkit-clip-path: polygon(0 $slant-hd, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 $slant-hd, 100% 0, 100% 100%, 0 100%);
+    }
+
+    @media (min-width: 2561px) {
+        // remove slanted edge on screens wider than qhd res
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+// --------------------------------------------------------- Setup //
+
+body {
+    font-family: $standard-text;
+    font-weight: 400;
+}
+
+a {
+    color: $black;
+
+    &:hover {
+        text-decoration: none;
+        color: $black;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+// -------------------------------------------------------- Resets //
+
+h1 {
+    font-family: $heading-text;
+    font-weight: 800;
+    font-size: 3.2rem;
+    word-wrap: break-word;
+
+    @media (min-width: 380px) {
+        font-size: 4rem;
+    }
+    @media (min-width: 576px) {
+        font-size: 5rem;
+    }
+}
+
+h2 {
+    font-family: $heading-text;
+    font-weight: 800;
+    font-size: 3rem;
+    color: $granite-grey;
+    margin-bottom: 3rem;
+
+    @media (min-width: 768px) {
+        margin-bottom: 4rem;
+    }
+}
+
+h3 {
+    font-family: $standard-text;
+    font-weight: 500;
+    font-size: 2rem;
+    color: $granite-grey;
+    margin-bottom: 1rem;
+}
