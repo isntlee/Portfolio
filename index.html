@@ -4,385 +4,471 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Online portfolio for Lee Martina Junior Full Stack Web Developer">
-    <meta name="keywords"
-        content="Web Developer, Full Stack Web Developer, Junior Web Developer, Front End Developer, Lee Martina, Dublin, Ireland">
-    <meta name="author" content="Lee Martina">
+    <title>.... - Software Developer</title>
 
-    <!-- favicon files -->
-    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicons/favicon_32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicons/favicon_16x16.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
 
-    <!-- style sheets -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-    <link rel="stylesheet" href="static/css/main.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Lee Martina Portfolio | Junior Full Stack Web Developer </title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="static/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="static/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="static/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/main.css" type="text/css" />
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#main-nav">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="#">
-            <img id="logo" src="static/images/logo.png" alt="Lee Martina Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <!-- Navbar -->
+    <nav id="main-nav" class="navbar navbar-expand-md fixed-top bg-dark-grey">
+
+        <!-- Mobile Menu -->
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <i class="fas fa-bars mt-1"></i>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#projects">Projects <span class="sr-only">(current)</span></a>
-                </li>
+        <!-- Navbar Items -->
+        <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto text-uppercase">
                 <li class="nav-item">
-                    <a class="nav-link" href="#skills">Stack</a>
+                    <a class="nav-link" href="#hey">Hey</a>
                 </li>
+                <i class="fas fa-stop d-none d-md-block"></i>
                 <li class="nav-item">
-                    <a class="nav-link" href="#profile">Contact</a>
+                    <a class="nav-link" href="#about-me">About Me</a>
+                </li>
+                <i class="fas fa-stop d-none d-md-block"></i>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <i class="fas fa-stop d-none d-md-block"></i>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <i class="fas fa-stop d-none d-md-block"></i>
+                <li class="nav-item">
+                    <a class="nav-link" href="#say-hi">Say Hi</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Header / main hero -->
-    <header id="home" class="container-fluid hero-img">
-        <div class="row no gutters">
-            <div class="col-12 full-height vertical-center-contents hero-overlay">
-                <div class="container mx-auto">
-                    <h1 class="main-heading">Lee Martina</h1>
-                    <h4 class="sub-heading">Junior Full Stack Developer</h4>
+    <!-- Nav Spacer -->
+    <div id="hey" class="nav-spacer bg-dark-grey"></div>
+
+    <!-- Hey! -->
+    <div id="hey-actual" class="container-fluid bg-dark-grey">
+        <div class="container">
+            <h1>
+                <span class="header-white">Hey! I'm</span><br>
+                <span class="header-white">Dave. </span><span class="header-blue">I write</span><br>
+                <span class="header-blue">co</span><span class="gradient-text">de & des</span><span
+                    class="header-yellow">ign</span><br>
+                <span class="header-yellow">awesome UI's</span>
+            </h1>
+
+        </div>
+    </div>
+
+    <!-- About Me -->
+    <div id="about-me" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="header-dark-grey">About Me</h2>
+                </div>
+                <div class="col-12 col-lg-7 text-justify">
+                    <h3>Hello <span><img src="static\img\wave.png" alt="wave" class="wave-icon mt-n3"></span></h3>
+                    <p>I am <strong>Full-Stack Software Developer</strong>, currently employed as a <strong>Web Developer</strong> where I help build and mantain Shopify stores. <a href="https://e-liquids.com" target="_blank"
+                        class="inline-link">This</a> is one of them. And also <a href="https://vitalitycbd.co.uk" target="_blank"
+                        class="inline-link">this one.</a> Oh, and here's<a href="https://beyouonline.co.uk/" target="_blank"
+                        class="inline-link">another one</a> too.</p>
+                    <p>When I'm not working, I'm usually either spending time with family, learning <a href="https://www.credential.net/74e78c8f-2f85-4364-8be4-240e932b83b6" target="_blank" class="inline-link">something new,</a> or working on a side project.</p>
+                    <p>I'm always on the lookout for something new to get stuck into. Whether you need someone for a couple of hours to fix or modify and existing site or application, or you require something bespoke building from scratch, I'm confident I can deliver.</p>
+                    <p><strong>If you have a project you feel I would be suitable
+                            for, please <a href="#say-hi" class="inline-link">get in touch.</a></strong></p>
+                </div>
+                <div class="col-12 col-lg-5 picture-position">
+                    <div class="d-inline-block picture-frame text-center">
+                        <div>
+                            <img src="static\img\pin.png" alt="pin" class="push-pin">
+                        </div>
+                        <img src="static\img\dave.png" alt="Dave" class="d-block mx-auto me-pic">
+                        <h6>....</h6>
+                        <h6>Full-Stack Software Developer</h6>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
     <!-- Projects -->
-    <section id="projects" class="container-fluid text-center hero-img">
-        <div class="row no-gutters">
-            <div class="col-12 full-height vertical-center-contents py-5 light-overlay">
-                <div class="container mx-auto">
-                    <div class="row no-gutters justify-content-center">
-                        <div class="col-12">
-                            <h2 class="heading">Projects</h2>
+    <div id="projects" class="container-fluid bg-py-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-n4 mb-md-n2 text-center header-white">Projects</h2>
+
+                    <!-- links app -->
+                    <div class="row project-block">
+                        <div class="col-12 col-lg-6 order-lg-last pl-lg-4">
+                            <h3>Links - A Bookmarking App</h3>
+
+                            <!-- tech labels -->
+                            <div class="mb-3">
+                                <span class="label bg-html-red text-white">HTML</span>
+                                <span class="label bg-sass-pink text-white">SASS</span>
+                                <span class="label bg-js-yellow">JavaScript</span>
+                                <span class="label bg-py-blue text-white">Python</span>
+                            </div>
+                            <div class="mb-4">
+                                <span class="label bg-django-green text-white">Django</span>
+                                <span class="label bg-postgresql-blue text-white">PostgreSQL</span>
+                                <span class="label bg-jquery-blue text-white">jQuery</span>
+                                <span class="label bg-bootstrap-purple text-white">Bootstrap</span>
+                            </div>
+                            <hr>
+
+                            <!-- project description -->
+                            <div>
+                                <p>An app which allows users to save the URL's of any website for easy reference. Built
+                                    using the Django framework and hosted on Heroku, users can add, edit, delete, and
+                                    organise their bookmark collection using a simple and intuitive UI.</p>
+                                <p>The app has built in scraping to automatically pull site metadata and icons which
+                                    makes
+                                    getting detailed information for the URL as simple as clicking one button.</p>
+                                <p>There is also a dedicated <span><a
+                                            href="https://chrome.google.com/webstore/detail/links/gogabcimknibfnonhajgpkibeeeppjbp"
+                                            target="_blank" class="inline-link-dark">Chrome Browser extension</a></span>
+                                    that
+                                    makes adding bookmarks even
+                                    easier.</p>
+                            </div>
+                            <hr>
+
+                            <!-- project links -->
+                            <div class="mt-4">
+                                <a href="https://github.com/.../bookmarks" target="_blank" role="button"
+                                    class="btn btn-project-link mr-3"><i class="fab fa-github mr-1"></i> GitHub</a>
+                                <a href="http://links-sw.herokuapp.com/" target="_blank" role="button"
+                                    class="btn btn-project-link"><i class="fas fa-globe mr-1"></i> App</a>
+                            </div>
+
                         </div>
-
-                        <div class="col-12 col-md-6 col-lg-5">
-                            <div id="project1" class="project-box">
-                                <div class="project-box-overlay">
-                                    <h4>sagacity</h4>
-                                    <div>
-                                        <a href="https://sagacity.herokuapp.com/"
-                                            class="d-inline-block cta-btn dark-btn" target="_blank">
-                                            View Project
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="https://github.com/isntlee/sagacity"
-                                            class="d-inline-block cta-btn dark-btn" target="_blank">
-                                            View Code
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-5">
-                            <div id="project2" class="project-box">
-                                <div class="project-box-overlay">
-                                    <h4>counterCarbon</h4>
-                                    <div>
-                                        <a href="https://isntlee.github.io/counterCarbon/"
-                                            class="d-inline-block cta-btn dark-btn" target="_blank">
-                                            View Project
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="https://github.com/isntlee/counterCarbon"
-                                            class="d-inline-block cta-btn dark-btn" target="_blank">
-                                            View Code
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Hidden on mobiles because this project was not designed to be mobile responsive -->
-                        <div class="col-12 col-md-6 col-lg-5 d-none d-md-block">
-                            <div id="project3" class="project-box">
-                                <div class="project-box-overlay">
-                                    <h4>Avalances</h4>
-                                    <div>
-                                        <a href="https://isntlee.github.io/Avalanches/"
-                                            class="d-inline-block cta-btn dark-btn" target="_blank">
-                                            View Project
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="https://github.com/isntlee/Avalanches"
-                                            class="d-inline-block cta-btn dark-btn" target="_blank">
-                                            View Code
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-5">
-                            <div id="project4" class="project-box">
-                                <div class="project-box-overlay">
-                                    <h4>Arkanoid</h4>
-                                    <div>
-                                        <a href="https://github.com/isntlee/Arkanoid/tree/master/images/arkanoid.gif"
-                                        class="d-inline-block cta-btn dark-btn" target="_blank">
-                                        View in Motion
-                                    </a>
-                                    </div>
-                                    <div>
-                                        <a href="https://github.com/isntlee/Arkanoid"
-                                        class="d-inline-block cta-btn dark-btn" target="_blank">
-                                        View Code
-                                    </a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Stack -->
-    <section id="skills" class="container-fluid">
-        <div class="row no-gutters">
-            <div class="col-12 full-height vertical-center-contents">
-                <div class="container mx-auto">
-                    <div class="row no-gutters justify-content-around">
-
-                        <div class="col-12 skill-set">
-                            <h2 class="heading">Stack</h2>
-                        </div>
-                        <div class="col-12 skill-set">
-                            <h3>Languages</h3>
-                            <div class="skill-container">
-                                <div class="languages-box">
-                                    <img src="static/images/icons/python.png" alt="Python" class="languages-box">
-                                    <p>Python</p>
-                                </div>
-                                <div class="languages-box">
-                                    <img src="static/images/icons/javascript.png" alt="Javascript"
-                                        class="languages-box">
-                                    <p>Javascript</p>
-                                </div>
-                            </div>
-                            <div class="skill-container">
-                                <div class="languages-box">
-                                    <img src="static/images/icons/sql.png" alt="SQL" class="languages-box">
-                                    <p>SQL</p>
-                                </div>
-                                <div class="languages-box">
-                                    <img src="tatic/images/icons/html.png" alt="HTML" class="languages-box">
-                                    <p>HTML</p>
-                                </div>
-                                <div class="languages-box">
-                                    <img src="static/images/icons/css.png" alt="CSS"
-                                        class="languages-box">
-                                    <p>CSS</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 skill-set">
-                            <h3>Tools</h3>
-                            <div class="skill-container">
-                                <div class="tools-box">
-                                    <img src="static/images/icons/git.png" alt="Git" class="tool-icon">
-                                    <p>Git</p>
-                                </div>
-                                <div class="tools-box">
-                                    <img src="static/images/icons/github.png" alt="GitHub" class="tool-icon">
-                                    <p>GitHub</p>
-                                </div>
-                                <div class="tools-box">
-                                    <img src="static/images/icons/github.png" alt="GitPod" class="tool-icon">
-                                    <p>GitPod</p>
-                                </div>
-                                <div class="tools-box">
-                                    <img src="static/images/icons/github.png" alt="AWS" class="tool-icon">
-                                    <p>AWS</p>
-                                </div>
-                                <div class="tools-box">
-                                    <img src="static/images/icons/github.png" alt="Atom" class="tool-icon">
-                                    <p>Atom</p>
-                                </div>
-                                <div class="skill-container">
-                                    <div class="tools-box">
-                                        <img src="static/images/icons/mysql.png" alt="NoSQL" class="tool-icon">
-                                        <p>NoSQL</p>
-                                    </div>
-                                    <div class="tools-box">
-                                        <img src="static/images/icons/nosql.png" alt="PostgreSQL" class="tool-icon">
-                                        <p>PostgreSQL</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skill-container">
-                                <div class="tools-box">
-                                    <img src="static/images/icons/mongodb.png" alt="MongoDB" class="tool-icon">
-                                    <p>MongoDB</p>
-                                </div>
-                                <div class="tools-box">
-                                    <img src="static/images/icons/heroku.png" alt="Heroku" class="tool-icon">
-                                    <p>Heroku</p>
-                                </div>
-                                <div class="skill-container">
-                                    <div class="tools-box">
-                                        <img src="static/images/icons/stripe.png" alt="Stripe" class="tool-icon">
-                                        <p>Stripe</p>
-                                    </div>
-                                    <div class="tools-box">
-                                        <img src="static/images/icons/photoshop.png" alt="Photoshop" class="tool-icon">
-                                        <p>Photoshop</p>
-                                    </div>
-                                    <div class="tools-box">
-                                        <img src="static/images/icons/slack.png" alt="Slack" class="tool-icon">
-                                        <p>Slack</p>
-                                    </div>
-                                    <div class="tools-box">
-                                        <img src="static/images/icons/slack.png" alt="PyGame" class="tool-icon">
-                                        <p>PyGame</p>
-                                    </div>
-                                    <div class="tools-box">
-                                        <img src="static/images/icons/slack.png" alt="Highcharts" class="tool-icon">
-                                        <p>Highcharts</p>
-                                    </div>
-                                    <div class="tools-box">
-                                        <img src="static/images/icons/slack.png" alt="D3js" class="tool-icon">
-                                        <p>D3js</p>
-                                    </div>
-                                    <div class="tools-box">
-                                        <img src="static/images/icons/slack.png" alt="DCjs" class="tool-icon">
-                                        <p>DCjs</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 skill-set">
-                            <h3>Frameworks & libraries</h3>
-                            <div class="skill-container">
-                                <div class="frameworks-box">
-                                    <img src="static/images/icons/django.png" alt="Django" class="frameworks-icon">
-                                    <p>Django</p>
-                                </div>
-                                <div class="frameworks-box">
-                                    <img src="static/images/icons/flask.png" alt="Flask" class="frameworks-icon">
-                                    <p>Flask</p>
-                                </div>
-                            </div>
-                            <div class="skill-container">
-                                <div class="frameworks-box">
-                                    <img src="static/images/icons/bootstrap.png" alt="Bootstrap" class="frameworks-icon">
-                                    <p>Bootstrap</p>
-                                </div>
-                                <div class="frameworks-box">
-                                    <img src="static/images/icons/materialize.png" alt="Materialize" class="frameworks-icon">
-                                    <p>Materialize</p>
-                                </div>
-                                <div class="frameworks-box">
-                                    <img src="static/images/icons/jquery.png" alt="jQuery" class="frameworks-icon">
-                                    <p>jQuery</p>
-                                </div>
-                            </div>
+                        <div class="col-12 col-lg-6 pr-lg-4">
+                            <img src="static\img\links_ss.png" alt="bookmarks-app"
+                                class="d-block mx-auto project-image image-border my-5 my-lg-0">
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="contact" class="container-fluid bg-off-white">
-        <div class="row no-gutters light-overlay py-5">
-            <div class="col-12">
-                <div class="container mx-auto">
-                    <div class="row justify-content-center">
-                        <div class="col-12">
-                            <h2 class="heading text-center">Contact</h2>
+                    <div id="hidden-projects" class="hidden">
+                        <!-- cheers app -->
+                        <div class="row project-block">
+                            <div class="col-12 col-lg-6 pl-lg-4">
+                                <h3>Cheers - The Drinks DB</h3>
+                                <div class="mb-3">
+                                    <span class="label bg-html-red text-white">HTML</span>
+                                    <span class="label bg-css-blue text-white">CSS</span>
+                                    <span class="label bg-js-yellow">JavaScript</span>
+                                    <span class="label bg-py-blue text-white">Python</span>
+                                </div>
+                                <div class="mb-4">
+                                    <span class="label bg-white">Flask</span>
+                                    <span class="label bg-mongodb-green text-white">MongoDB</span>
+                                    <span class="label bg-jquery-blue text-white">jQuery</span>
+                                    <span class="label bg-bootstrap-purple text-white">Bootstrap</span>
+                                </div>
+                                <hr>
+                                <div>
+                                    <p>This app was built using the Flask micro web framework and then hosted with
+                                        Heroku.</p>
+                                    <p>Users can add, edit, and delete their own drinks. Drinks submitted by other users
+                                        can
+                                        be
+                                        commented on and added to a list of favorites.</p>
+                                    <p>There are extensive search, sort, and filtering options available to make finding
+                                        what
+                                        you want quick and easy.</p>
+                                </div>
+                                <hr>
+
+                                <!-- project links -->
+                                <div class="mt-4">
+                                    <a href="https://github.com/steview-d/drinks-db" target="_blank" role="button"
+                                        class="btn btn-project-link mr-3"><i class="fab fa-github mr-1"></i> GitHub</a>
+                                    <a href="https://cheers-drinksdb.herokuapp.com/" target="_blank" role="button"
+                                        class="btn btn-project-link"><i class="fas fa-globe mr-1"></i> App</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 pl-lg-4">
+                                <img src="static\img\drinks_ss.jpg" alt="drinks-db app"
+                                    class="d-block mx-auto project-image image-border my-5 my-lg-0">
+                            </div>
                         </div>
-                        <div class="col-12 col-md-8 m-lg-6">
-                            <form id="contact-form">
-                                <div class="form-group">
-                                    <label for="name">Name</label>
-                                    <input type="text" class="form-control" id="name" name="name"
-                                        placeholder="Enter name" required>
+
+                        <!-- superhero dashboard -->
+                        <div class="row project-block">
+                            <div class="col-12 col-lg-6 order-lg-last pl-lg-4">
+                                <h3>Data Dashboard</h3>
+                                <div class="mb-3">
+                                    <span class="label bg-html-red text-white">HTML</span>
+                                    <span class="label bg-css-blue text-white">CSS</span>
+                                    <span class="label bg-js-yellow">JavaScript</span>
                                 </div>
-                                <div class="form-group">
-                                    <label for="email">Email address</label>
-                                    <input type="email" class="form-control" id="email" name="email"
-                                        placeholder="Enter email" required>
+                                <div class="mb-4">
+                                    <span class="label bg-jquery-blue text-white">jQuery</span>
+                                    <span class="label bg-d3-orange">D3</span>
+                                    <span class="label bg-d3-orange">DC</span>
+                                    <span class="label bg-bootstrap-purple text-white">Bootstrap</span>
                                 </div>
-                                <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea type="text" class="form-control" name="message" id="message" cols="30"
-                                        rows="8" placeholder="Write your message here" required></textarea>
+                                <hr>
+                                <div>
+                                    <p>Data on over 700 different superheroes & supervillains displayed on screen using
+                                        a dashboard format.
+                                    </p>
+                                    <p>The page uses D3.js with the DC and crossfilter JavaScript libraries to allow the
+                                        user to manipulate the dataset in various ways.</p>
                                 </div>
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="noBot" required>
-                                    <label class="form-check-label" for="noBot">Definitely not a robot</label>
+                                <hr>
+
+                                <!-- project links -->
+                                <div class="mt-4">
+                                    <a href="https://github.com/steview-d/superhero-dashboard" target="_blank"
+                                        role="button" class="btn btn-project-link mr-3"><i
+                                            class="fab fa-github mr-1"></i> GitHub</a>
+                                    <a href="https://steview-d.github.io/superhero-dashboard/" target="_blank"
+                                        role="button" class="btn btn-project-link"><i class="fas fa-globe mr-1"></i>
+                                        Dashboard</a>
                                 </div>
-                                <button id="contact-btn" type="submit" class="cta-btn lighter-btn">Send</button>
-                            </form>
-                        </div>
-                        <div class="col-12 col-md-2 vertical-center-contents">
-                            <div class="text-center">
-                                <h3 class="heading h4 my-5 d-md-none">All other means</h3>
-                                <div class="contact-icon">
-                                    <a href="https://github.com/isntlee" target="_blank">
-                                        <i class="fab fa-github-alt"></i>
-                                        <p>GitHub</p>
-                                    </a>
-                                </div>
-                                <div class="contact-icon">
-                                    <a href="https://www.linkedin.com/in/lee-martina/" target="_blank">
-                                        <i class="fab fa-linkedin-in"></i>
-                                        <p>LinkedIn</p>
-                                    </a>
-                                </div>
-                                <div class="contact-icon">
-                                    <!-- Update cv with insiteful email address -->
-                                    <a href="static/pdf/lmartina_cv.pdf" download>
-                                        <i class="fas fa-cloud-download-alt"></i>
-                                        <p>Download CV</p>
-                                    </a>
-                                </div>
-                                <div class="contact-icon">
-                                    <i class="far fa-paper-plane"></i>
-                                    <p>leedavidmartina@<br>gmail.com</p>
-                                </div>
-                                <div class="contact-icon">
-                                    <i class="fas fa-mobile-alt"></i>
-                                    <p>(+353) 85 <br>211 9939</p>
-                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 pl-lg-4">
+                                <img src="static\img\dd_ss.png" alt="bookmarks-app"
+                                    class="d-block mx-auto project-image my-5 my-lg-0">
                             </div>
                         </div>
                     </div>
 
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <button id="btn-show-more" class="btn btn-show-more">Show More Projects</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills" class="container-fluid bg-py-yellow">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="header-dark-grey">Skills</h2>
+                    <div class="logo-wrapper text-center">
+                        <div class="tech-logo" data-tippy-content="HTML">
+                            <img src="static\img\logo\html.png" alt="html5_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="CSS">
+                            <img src="static\img\logo\css.png" alt="css_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="JavaScript">
+                            <img src="static\img\logo\js.png" alt="js_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="Python">
+                            <img src="static\img\logo\python.png" alt="python_logo">
+                        </div>
+                        <div class="flex-line-break"></div>
+                        <div class="tech-logo" data-tippy-content="PostgreSQL">
+                            <img src="static\img\logo\postgresql.png" alt="postgresql_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="MongoDB">
+                            <img src="static\img\logo\mongodb.png" alt="mongodb_logo">
+                        </div>
+                    </div>
+                    <div class="logo-wrapper text-center">
+                        <div class="tech-logo" data-tippy-content="Django">
+                            <img src="static\img\logo\django.png" alt="django5_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="Flask">
+                            <img src="static\img\logo\flask.png" alt="flask_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="jQuery">
+                            <img src="static\img\logo\jquery.png" alt="jquery_logo">
+                        </div>
+                        <div class="flex-line-break"></div>
+                        <div class="tech-logo" data-tippy-content="jQuery UI">
+                            <img src="static\img\logo\jqueryui.png" alt="jquery_ui_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="D3.js">
+                            <img src="static\img\logo\d3.png" alt="d3_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="DC.js">
+                            <img src="static\img\logo\dc.png" alt="dc_logo">
+                        </div>
+                    </div>
+                    <div class="logo-wrapper text-center">
+                        <div class="tech-logo" data-tippy-content="Jinja">
+                            <img src="static\img\logo\jinja.png" alt="jinja_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="Bootstrap">
+                            <img src="static\img\logo\bootstrap.png" alt="bootstrap_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="Materialize">
+                            <img src="static\img\logo\materialize.png" alt="materialize_logo">
+                        </div>
+                        <div class="flex-line-break"></div>
+                        <div class="tech-logo" data-tippy-content="Tippy">
+                            <img src="static\img\logo\tippy.png" alt="tippy_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="Font Awesome">
+                            <img src="static\img\logo\font_awesome.png" alt="font_awesome_logo">
+                        </div>
+                    </div>
+                    <div class="logo-wrapper text-center">
+                        <div class="tech-logo" data-tippy-content="GitHub">
+                            <img src="static\img\logo\github.png" alt="github_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="Git">
+                            <img src="static\img\logo\git.png" alt="git_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="VS Code">
+                            <img src="static\img\logo\vscode.png" alt="vscode_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="SASS">
+                            <img src="static\img\logo\sass.png" alt="sass_logo">
+                        </div>
+                        <div class="flex-line-break"></div>
+                        <div class="tech-logo" data-tippy-content="Heroku">
+                            <img src="static\img\logo\heroku.png" alt="heroku_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="Travis CI">
+                            <img src="static\img\logo\travis_ci.png" alt="travis_ci_logo">
+                        </div>
+                    </div>
+                    <div class="logo-wrapper text-center">
+                        <div class="tech-logo" data-tippy-content="Stripe">
+                            <img src="static\img\logo\stripe.png" alt="stripe_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="AWS S3">
+                            <img src="static\img\logo\aws_s3.png" alt="aws_s3_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="Balsamiq">
+                            <img src="static\img\logo\balsamiq.png" alt="balsamiq_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="Photoshop">
+                            <img src="static\img\logo\photoshop.png" alt="photoshop_logo">
+                        </div>
+					</div>
+					<div class="logo-wrapper text-center">
+                        <div class="tech-logo" data-tippy-content="Shopify">
+                            <img src="static\img\logo\shopify.png" alt="shopify_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="Shopify Plus">
+                            <img src="static\img\logo\shopify_plus.png" alt="shopify_plus_logo">
+                        </div>
+                        <div class="tech-logo" data-tippy-content="Klaviyo">
+                            <img src="static\img\logo\klaviyo.png" alt="klaviyo_logo">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Say Hi -->
+    <div id="say-hi" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="pb-2 header-dark-grey">Say Hi</h2>
+                </div>
+                <div class="col-12 col-lg-5 mx-auto">
+                    <form action="https://app.99inbound.com/api/e/hqqAO-Gu" method="POST" target="_blank">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="message"
+                                placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-send">SEND</button>
+
+                        <div style="position: absolute; left: -5000px;">
+                            <input type="checkbox" name="conservative_cyan_wavy_bowl" value="1" tabindex="-1"
+                                autocomplete="no">
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-12 col-lg-5 mx-auto text-center email-box">
+                    <h4 class="mt-5 mt-lg-2 pt-4 pb-2">Or send me an email</h4>
+                    <div class="d-inline-block d-lg-none"><a href="mailto:hi@...."><img src="static\img\email.png"
+                                width=120 alt="email-icon" class="d-block mx-auto my-3"></a></div>
+                    <div class="d-none d-lg-inline-block"><a href="mailto:hi@...."><img
+                                src="static\img\email_inv.png" width=120 alt="email-icon"
+                                class="d-block mx-auto my-3"></a></div>
+                </div>
+                <div class="col-12 text-center mt-5">
+                    <h4 class="pb-2 header-dark-grey">Or call me, on 
+                        <a class="tel-no" href="tel:....">....</a></h4>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark-grey text-white">
+        <div class="container">
+            <div class="row">
+                <div class="d-none d-sm-block col-6 my-auto">
+                    &copy;<span id="copyright-year">2020</span> ....
+                </div>
+                <div class="col-12 col-sm-6 text-right">
+                    <a href="https://github.com/...." target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://www.linkedin.com/in/..../" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="static/docs/...._CV.pdf" target="_blank"><i class="fas fa-file-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- bootstrap js scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <!-- tippy.js scripts -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <!-- main js script-->
     <script src="static/js/main.js"></script>
 </body>
 
-</html> 
+</html>
