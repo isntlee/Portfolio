@@ -612,9 +612,9 @@ footer i:hover {
   }
 }
 
-#say-hi .tel-no {
+/* #say-hi .tel-no {
   border-bottom: 1px solid black;
-}
+} */
 
 @media screen and (max-width: 767px) {
   #say-hi .tel-no {
