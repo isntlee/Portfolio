@@ -1,0 +1,2 @@
+- No real errors/problems found yet 
+- The favicon isn't perfect, could change it for a circular one
